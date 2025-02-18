@@ -7,7 +7,7 @@ import User from '../models/userModel.js';
 
 // Generate JWT
 const generateToken = (id) => {
-  return jwt.sign({ id }, process.env.JWT_SECRET, { expiresIn: '30d' });
+  return jwt.sign({ id }, process.env.JWT_SECRET, { expiresIn: '300d' });
 };
 
 // @desc    Register new user
