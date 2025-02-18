@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* global styles */
+body {
+    min-height: 100vh;
+    background-color: #1309a1;  /* Dark blue background */
+    color: whitesmoke;           /* Light text color */
+    display: grid;
+    place-content: center;       /* Centers content vertically and horizontally */
+    padding: 1rem;
+    margin: 0;
+    font-family: Arial, sans-serif; /* Optional: Set a nice font */
+}
+
+h1 {
+    font-size: 3rem;
+    text-align: center;         /* Center the heading */
+    margin: 0.5rem 0;
+}
+
+p {
+    font-size: 1.2rem;
+    text-align: center;         /* Center the paragraph */
+    margin: 0;
+}

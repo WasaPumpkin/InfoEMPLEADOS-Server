@@ -28,7 +28,18 @@ app.use(cors(corsOptions));
 app.use(express.json());
 
 // Serve static files from the "public" directory
-app.use('/', express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'public')));
+
+// Route to serve your custom HTML file when accessing root
+app.get('/', (req, res) => {
+  const filePath = path.join(__dirname, 'views', 'index.html'); // Adjust the path here
+  res.sendFile(filePath, (err) => {
+    if (err) {
+      console.error(err);
+      res.status(500).send('Error loading the page');
+    }
+  });
+});
 
 // Routes
 app.use('/api/users', userRoutes);
