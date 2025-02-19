@@ -1,12 +1,11 @@
 //config/allowedOrigins
 
 // src/config/allowedOrigins.js
+// src/config/allowedOrigins.js
 const allowedOrigins = [
-  //  'http://localhost:5173', // Frontend URL for local development
-  // 'http://localhost:3000',//Frontend URL for local development
-  // 'http://localhost:5000',//Frontend URL for local development
-  'https://infoempleados.onrender.com'
+  'https://infoempleados-1b0q.onrender.com', // Frontend URL
+  // 'http://localhost:5173', // Local development URL (if needed)
+  // 'http://localhost:3000'  // Local development URL (if needed)
 ];
 
 export default allowedOrigins;
-
